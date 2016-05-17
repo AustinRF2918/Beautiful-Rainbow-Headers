@@ -1,15 +1,15 @@
-@mixin rainbow-generate($id, $scalar, $y-size, $color1, $color2, $color3, $color4, $color5, $color6)
+@mixin rainbow-generate($class, $scalar, $y-size, $color1, $color2, $color3, $color4, $color5, $color6)
 {
-    .#{$id}
+    .#{$class}
     {
         margin: 0px;
         position: relative;
         height: 5em;
         border: 0;
-        overflow: hidden;
+        overflow: hclassden;
     }
 
-    .#{$id}:before
+    .#{$class}:before
     {
         content: "";
         display: block;
