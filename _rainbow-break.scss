@@ -6,7 +6,7 @@
         position: relative;
         height: 5em;
         border: 0;
-        overflow: hclassden;
+        overflow: hidden;
     }
 
     .#{$class}:before
@@ -15,19 +15,18 @@
         display: block;
         position: absolute;
         top: 0px;
-        left: 0;
+        left: -18%;
         height: $y-size;
-        width: 10vw * 1.44;
-        background: $color-break-red;
+        width: 12vw * 1.44;
         box-shadow:
-            10vw*$scalar 0 0 0 $color1,
-            20vw*$scalar 0 0 0 $color2,
-            30vw*$scalar 0 0 0 $color3,
-            40vw*$scalar 0 0 0 $color4,
-            50vw*$scalar 0 0 0 $color5,
-            60vw*$scalar 0 0 0 $color6;
+            12vw*$scalar 0 0 0 $color1,
+            24vw*$scalar 0 0 0 $color2,
+            36vw*$scalar 0 0 0 $color3,
+            48vw*$scalar 0 0 0 $color4,
+            60vw*$scalar 0 0 0 $color5,
+            72vw*$scalar 0 0 0 $color6;
     }
 }
 
 //@include rainbow-generate(rainbow, 1.44, .55em, $color-break-orange, $color-break-yellow, $color-break-green, $color-break-blue, $color-break-indigo, $color-break-violet)
-@include rainbow-generate(rainbow, 1.44, .55em, #89b1cc, #3b7399, #c5fff8, #ff9985, #cc8a89, #CCA5AB)
+@include rainbow-generate(rainbow, 1.44, .5em, #89b1cc, #3b7399, #c5fff8, #ff9985, #cc8a89, #CCA5AB)
